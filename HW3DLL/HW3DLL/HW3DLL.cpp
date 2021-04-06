@@ -7,6 +7,12 @@
 using namespace std;
 
 // DLL internal state variables:
+extern const int a;
+extern const int b;
+extern const int c;
+extern const int d;
+float e;
+extern const int nTask2Const;
 int nTask2Var;
 int nTask2Result;
 int Array[3][3][3];
