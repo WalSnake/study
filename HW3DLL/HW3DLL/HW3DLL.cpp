@@ -45,12 +45,11 @@ int task_two()
     };
 
 // Task 3
-int task_three(
-    int *pArr
-    )
+int task_three()
     {
+        int *pArr;
         pArr = nullptr;
-        int Array[3][3][3]{0};
+        int Array[3][3][3];
         pArr = & Array[1][1][1];
         *pArr = 13;
         cout << *pArr << endl;
