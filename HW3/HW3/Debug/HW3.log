@@ -1,0 +1,4 @@
+﻿HW3.obj : error LNK2019: unresolved external symbol __imp__task_one referenced in function _main
+HW3.obj : error LNK2019: unresolved external symbol __imp__task_two referenced in function _main
+HW3.obj : error LNK2019: unresolved external symbol __imp__task_three referenced in function _main
+C:\Users\WalSnake\source\repos\HW3\Debug\HW3.exe : fatal error LNK1120: 3 unresolved externals

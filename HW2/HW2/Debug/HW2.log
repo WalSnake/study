@@ -1,0 +1,4 @@
+﻿  HW2.cpp
+C:\Users\WalSnake\source\repos\HW2\HW2\HW2.cpp(26,18): warning C4244: '=': conversion from 'double' to '__int64', possible loss of data
+C:\Users\WalSnake\source\repos\HW2\HW2\HW2.cpp(29,18): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  HW2.vcxproj -> C:\Users\WalSnake\source\repos\HW2\Debug\HW2.exe
