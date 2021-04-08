@@ -52,7 +52,7 @@ int main()
     // Task three
     cout << "// Task three //" << endl;
 
-    int iT3 = 0;
+    int iT3 = 1;
     do {
         //cout << " ";
         if (iT3 % 2 != 0)
