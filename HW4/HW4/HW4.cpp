@@ -54,7 +54,6 @@ int main()
 
     int iT3 = 1;
     do {
-        //cout << " ";
         if (iT3 % 2 != 0)
         {
             cout << iT3;
@@ -69,5 +68,46 @@ int main()
     cout << "" << endl;
     cout << "---------------------------------------------------------------------------------------" << endl;
 
+    // Task Four
+    cout << "// Task four //" << endl;
+
+    int iNum; // Number
+    int iDiv; // Divider
+    bool TempRes; // Temporary logic result
+
+    cout << "Enter integer number" << endl;
+    cin >> iNum;
+    iDiv = 2;
+    
+    if (iNum != 1)
+    {
+        do {
+            if (iNum % iDiv != 0)
+            {
+                TempRes = true;
+                iDiv++;
+            }
+            else
+            {
+                TempRes = false;
+                break;
+            }
+        } while (iDiv < iNum);
+    }
+    else
+    {
+        TempRes = true;
+    }
+    
+    if (TempRes == true)
+    {
+        cout << "It is a simple number" << endl;
+    }
+    else
+    {
+        cout << "It is NOT a simple number" << endl;
+    }
+    
+    cout << "---------------------------------------------------------------------------------------" << endl;
     return 0;
 }
