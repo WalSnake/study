@@ -79,7 +79,7 @@ int main()
     cin >> iNum;
     iDiv = 2;
     
-    if (iNum != 1)
+    if (iNum != 1) // Exception for 1
     {
         do {
             if (iNum % iDiv != 0)
@@ -109,5 +109,36 @@ int main()
     }
     
     cout << "---------------------------------------------------------------------------------------" << endl;
+
+    // Task 5
+    cout << "// Task 5 //" << endl;
+    int year;
+
+    cout << "Enter year from 1 to 3000" << endl;
+    cin >> year;
+
+    if (year >= 1 && year <= 3000)
+    {
+        if (year % 4 == 0)
+        {
+            if (year % 100 == 0 && year % 400 == 0)
+                {
+                    cout << year << " is leap year" << endl;
+                }
+            else
+            {
+                cout << year << " is not leap year" << endl;
+            }
+        }
+        else
+        {
+            cout << year << " is not leap year" << endl;
+        }
+    }
+    else
+    {
+        cout << "You entered wrong numbers! We all gona die! Aaaaa!.." << endl;
+        cout << "Programm commited suicide" << endl;
+    }
     return 0;
 }
