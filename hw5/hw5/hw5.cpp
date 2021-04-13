@@ -43,48 +43,12 @@ bool InvertArray(int arr[], int size)
 // Task 3 function {1 4 7 10 13 16 19 22}
 bool InitArray3(int arr[], int size)
 {
+	int a = 1;
 	for (size_t i = 0; i < size; i++)
 	{
-		if (i == 0)
-		{
-			arr[i] = 1;
-			cout << arr[i] << " ";
-		}
-		if (i == 1)
-		{
-			arr[i] = 4;
-			cout << arr[i] << " ";
-		}
-		if (i == 2)
-		{
-			arr[i] = 7;
-			cout << arr[i] << " ";
-		}
-		if (i == 3)
-		{
-			arr[i] = 10;
-			cout << arr[i] << " ";
-		}
-		if (i == 4)
-		{
-			arr[i] = 13;
-			cout << arr[i] << " ";
-		}
-		if (i == 5)
-		{
-			arr[i] = 16;
-			cout << arr[i] << " ";
-		}
-		if (i == 6)
-		{
-			arr[i] = 19;
-			cout << arr[i] << " ";
-		}
-		if (i == 7)
-		{
-			arr[i] = 22;
-			cout << arr[i] << " ";
-		}
+		arr[i] = a;
+		cout << arr[i] << " ";
+		a = a + 3;
 	}
 	cout << endl;
 	return true;
@@ -92,6 +56,8 @@ bool InitArray3(int arr[], int size)
 
 int main()
 {
+	srand(time(0));
+
 	// Task 1
 	cout << "// Task 1 //" << endl;
 	{

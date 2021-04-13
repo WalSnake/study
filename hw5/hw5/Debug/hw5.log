@@ -3,5 +3,6 @@ C:\Users\WalSnake\source\repos\hw5\hw5\hw5.cpp(8,23): warning C4018: '<': signed
 C:\Users\WalSnake\source\repos\hw5\hw5\hw5.cpp(19,23): warning C4018: '<': signed/unsigned mismatch
 C:\Users\WalSnake\source\repos\hw5\hw5\hw5.cpp(29,23): warning C4018: '<': signed/unsigned mismatch
 C:\Users\WalSnake\source\repos\hw5\hw5\hw5.cpp(34,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\WalSnake\source\repos\hw5\hw5\hw5.cpp(46,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\WalSnake\source\repos\hw5\hw5\hw5.cpp(47,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\WalSnake\source\repos\hw5\hw5\hw5.cpp(59,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   hw5.vcxproj -> C:\Users\WalSnake\source\repos\hw5\Debug\hw5.exe
