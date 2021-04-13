@@ -61,10 +61,27 @@ bool ShiftArray(int arr[], int tarr[], int size, int n)
 	for (size_t i = 0; i < size; i++)
 	{
 		cout << arr[i] << " ";
-		
-		tarr[i] = arr[i+n];
 	}
 	cout << endl;
+	for (size_t i = 0; i < size; i++)
+	{
+		if (n >= 0 && (i+n) < size)
+		{
+			tarr[(i + n)] = arr[i];
+		}
+		if (n > 0 && (i + n) >= size)
+		{
+			tarr[(0 + n)] = arr[i];
+		}
+		if (n < 0 && i+n >=0)
+		{
+
+		}
+		if (n < 0 && i + n < 0)
+		{
+
+		}
+	}
 	*arr = *tarr;
 	for (size_t i = 0; i < size; i++)
 	{
@@ -98,7 +115,7 @@ bool CheckBalance(int arr[], int size)
 		}
 		else
 		{
-			cout << "||" << arr[i] << " ";
+			cout << "| " << arr[i] << " ";
 			//cout << "TRUE" << endl;
 			balance = true;
 			balancetmp = false;
@@ -150,8 +167,7 @@ int main()
 	cout << "-----------------------------------------------------------------------" << endl;
 
 	// Task 4*
-	/*
-	cout << "// Task 4* //" << endl;
+	/*cout << "// Task 4* //" << endl;
 	{
 		int a;
 		cin >> a;
@@ -160,14 +176,14 @@ int main()
 		InitArray(myarr, mysize, 100);
 		ShiftArray(myarr, myarr, mysize, a);
 	}
-	cout << "-----------------------------------------------------------------------" << endl;
-	*/
+	cout << "-----------------------------------------------------------------------" << endl;*/
+	
 	// Task 5*
 	cout << "// Task 5* //" << endl;
 	{
 		const int mysize = 8;
 		int myarr[mysize];
-		InitArray(myarr, mysize, 2);
+		InitArray(myarr, mysize, 3);
 		CheckBalance(myarr, mysize);
 	}
 	return 0;
