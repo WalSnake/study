@@ -1,0 +1,7 @@
+﻿  hw5.cpp
+C:\Users\WalSnake\source\repos\hw5\hw5\hw5.cpp(8,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\WalSnake\source\repos\hw5\hw5\hw5.cpp(19,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\WalSnake\source\repos\hw5\hw5\hw5.cpp(29,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\WalSnake\source\repos\hw5\hw5\hw5.cpp(34,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\WalSnake\source\repos\hw5\hw5\hw5.cpp(46,23): warning C4018: '<': signed/unsigned mismatch
+  hw5.vcxproj -> C:\Users\WalSnake\source\repos\hw5\Debug\hw5.exe
