@@ -13,12 +13,12 @@ bool PrintArray(double arr[], int size)
 	return true;
 }
 
-// Task 2 & 3 array initialization function
-bool InitArray(int* arr, int size)
+// Task 2 & 4 & 5 array initialization function
+bool InitArray(int* arr, int size, int a)
 {
 	for (size_t i = 0; i < size; i++)
 	{
-		arr[i] = rand() % 2;
+		arr[i] = rand() % a;
 	}
 	return true;
 }
@@ -40,7 +40,7 @@ bool InvertArray(int arr[], int size)
 	return true;
 }
 
-// Task 3 function {1 4 7 10 13 16 19 22}
+// Task 3 function
 bool InitArray3(int arr[], int size)
 {
 	int a = 1;
@@ -49,6 +49,69 @@ bool InitArray3(int arr[], int size)
 		arr[i] = a;
 		cout << arr[i] << " ";
 		a = a + 3;
+	}
+	cout << endl;
+	return true;
+}
+
+// Task 4 function
+/*
+bool ShiftArray(int arr[], int tarr[], int size, int n)
+{
+	for (size_t i = 0; i < size; i++)
+	{
+		cout << arr[i] << " ";
+		
+		tarr[i] = arr[i+n];
+	}
+	cout << endl;
+	*arr = *tarr;
+	for (size_t i = 0; i < size; i++)
+	{
+		cout << arr[i] << " ";
+	}
+	cout << endl;
+	return true;
+}
+*/
+
+// Task 5*
+bool CheckBalance(int arr[], int size)
+{
+	int a = 0;
+	int b = 0;
+	bool balance = false;
+	bool balancetmp = false;
+	for (size_t i = 0; i < size; i++)
+	{
+		b = b + arr[i];
+		//cout << arr[i] << " ";
+	}
+	for (size_t i = 0; i < size; i++)
+	{
+		if (balancetmp == false)
+		{
+			cout << arr[i] << " ";
+			a = a + arr[i];
+			b = b - arr[i];
+			balancetmp = (a == b) ? true : false;
+		}
+		else
+		{
+			cout << "||" << arr[i] << " ";
+			//cout << "TRUE" << endl;
+			balance = true;
+			balancetmp = false;
+		}
+	}
+	cout << endl;
+	if (balance == true)
+	{
+		cout << "TRUE";
+	}
+	else
+	{
+		cout << "FALSE";
 	}
 	cout << endl;
 	return true;
@@ -63,10 +126,7 @@ int main()
 	{
 		const int mysize = 7;
 		double myarr[] = { 8.5267, 75.4356, 0.1245, 4.7658, 2.6572, 4.2456, 68.0021 };
-		if (PrintArray(myarr, mysize))
-		{
-			cout << "Array was successfuly printed" << endl;
-		}
+		PrintArray(myarr, mysize);
 	}
 	cout << "-----------------------------------------------------------------------" << endl;
 
@@ -75,11 +135,7 @@ int main()
 	{
 		const int mysize = 10;
 		int myarr[mysize];
-		if (InitArray(myarr, mysize))
-		{
-			cout << "Array was successfuly initialized" << endl;
-		}
-		
+		InitArray(myarr, mysize, 2);		
 		InvertArray(myarr, mysize);
 	}
 	cout << "-----------------------------------------------------------------------" << endl;
@@ -93,5 +149,26 @@ int main()
 	}
 	cout << "-----------------------------------------------------------------------" << endl;
 
+	// Task 4*
+	/*
+	cout << "// Task 4* //" << endl;
+	{
+		int a;
+		cin >> a;
+		const int mysize = 10;
+		int myarr[mysize];
+		InitArray(myarr, mysize, 100);
+		ShiftArray(myarr, myarr, mysize, a);
+	}
+	cout << "-----------------------------------------------------------------------" << endl;
+	*/
+	// Task 5*
+	cout << "// Task 5* //" << endl;
+	{
+		const int mysize = 8;
+		int myarr[mysize];
+		InitArray(myarr, mysize, 2);
+		CheckBalance(myarr, mysize);
+	}
 	return 0;
 }
