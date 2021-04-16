@@ -65,19 +65,19 @@ bool EnterFileName2()
     };
     return true;
 }
-/*bool EnterFileName3()
+bool EnterFileName3()
 {
     filetype = (".txt");
     cout << "Enter file three name" << endl;
     cin >> fname3;
     fname3 = (fname3 + filetype);
     while (fname3 == fname1 || fname3 == fname2)
-        {
-            cout << "All names must be unique. ";
-            EnterFileName3();
-        };
+    {
+        cout << "All names must be unique. ";
+        EnterFileName3();
+    };
     return true;
-}*/
+}
 
 int main()
 {
@@ -174,47 +174,72 @@ int main()
     // Task 4
     /*cout << "// Task 3 //" << endl;
     {
-        string text1;
-        string text2;
         EnterFileName3();
-        while (fname3 == fname2 || fname3 == fname1);
+        string* ptrArr;
+        int n;
+        n = 1;
+        ptrArr = new (nothrow) string[n];
+        if (ptrArr != nullptr)
         {
-            cout << "All names must be unique. ";
-            EnterFileName3();
-        } 
-        {
-            ifstream fin(fname1);
-            if (fin.is_open())
+            for (size_t i = 0; i < n; i++)
             {
-                fin >> text1;
+                ifstream fin(fname1);
+                if (fin.is_open())
+                {
+                    const size_t size = 255;
+                    char buf[size];
+                    while (!fin.eof())
+                    {
+                        fin.getline(buf, size) >> *ptrArr;
+                        cout << buf << endl;
+                        n++;
+                    }
+                    fin.close();
+                }
+                else
+                {
+                    cout << "Unable to open file" << endl;
+                }
             }
-            else
-            {
-                cout << "Unable to open file. ";
-                EnterFileName1;
-            }
-        }
-        {
-            ifstream fin(fname2);
-            if (fin.is_open())
-            {
-                fin >> text2;
-            }
-            else
-            {
-                cout << "Unable to open file. ";
-                EnterFileName2;
-            }
-        }
-        {
             ofstream fout(fname3);
             if (fout.is_open())
             {
-                fout << text1 << endl;
-                fout << text2 << endl;
+                fout << ptrArr[i] << endl;
+                }
+            delete[] ptrArr;
+            ptrArr = nullptr;
+        }
+        else
+        {
+            cout << "Error! Can not allocate memory!";
+        }*/
+
+        /*{
+            ifstream fin(fname2);
+            if (fin.is_open())
+            {
+                const size_t size = 255;
+                char buf[size];
+                while (!fin.eof())
+                {
+                    fin.getline(buf, size);
+                    ofstream fout(fname3);
+                    if (fout.is_open())
+                    {
+                        fout << buf << endl;
+                    }
+                    else
+                    {
+                        cout << "Unable to create or open file" << endl;
+                    }
+                }
+                fin.close();
+            }
+            else
+            {
+                cout << "Unable to open file" << endl;
             }
         }
-
     }*/
     cin.get();
     return 0;
