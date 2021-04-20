@@ -1,7 +1,4 @@
 ﻿  main.cpp
 C:\Users\WalSnake\source\repos\hw7\hw7\main.cpp(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\WalSnake\source\repos\hw7\hw7\main.cpp(11,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  mylib.cpp
-C:\Users\WalSnake\source\repos\hw7\hw7\mylib.cpp(11,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  Generating Code...
   hw7.vcxproj -> C:\Users\WalSnake\source\repos\hw7\Debug\hw7.exe

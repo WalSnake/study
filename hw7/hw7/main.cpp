@@ -52,9 +52,6 @@ int main()
                 if (myarr[j] > myarr[j + 1])
                 {
                     SwapINT(myarr[j], myarr[j + 1]);
-                    /*int b = myarr[j];
-                    myarr[j] = myarr[j + 1];
-                    myarr[j + 1] = b; */
                 }
             }
         }
@@ -79,6 +76,7 @@ int main()
             fout << pEmployee->salary << endl;
             delete pEmployee;
             fout.close();
+            cout << "Size of structure Employee: " << sizeof(Employee) << endl;
         }
         else
         {
