@@ -91,6 +91,42 @@ public:
         std::cout << "Minivan: " << company << " " << model << std::endl;
     }
 };
+/* 
+//I have no idea what I should to do in this task
+//Task #3
+class fraction {
+    int numerator;
+    int denominator;
+    fraction(int numerator, int denuminator) {
+
+};
+*/
+
+//Task#4
+class Card {
+    enum suit { Hearts, Tiles, Clovers, Pikes };
+    std::string value;
+    bool face;
+    bool flip(bool face) {
+        if (face = 0) {
+            face = 1;
+        }
+        else {
+            face = 0;
+        }
+    };
+    int getValue(std::string value)
+    if (value = "A") { return 1 };
+    if (value = "2" || "J") { return 2 };
+    if (value = "3" || "Q") { return 3 };
+    if (value = "4" || "K") { return 4 };
+    if (value = "5") { return 5 };
+    if (value = "6") { return 6 };
+    if (value = "7") { return 7 };
+    if (value = "8") { return 8 };
+    if (value = "9") { return 9 };
+    if (value = "10") { return 10 };
+};
 
 int main()
 {
