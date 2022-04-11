@@ -11,12 +11,12 @@ public:
 
 	Power() {}
 
-	void setThing() {
+	void set() {
 		cout << "Give me two float numbers" << endl;
 		cin >> a >> b;
 	}
 
-	float calculateThing() {
+	float calculate() {
 		float c = pow(a, b);
 		return c;
 	}
@@ -127,8 +127,8 @@ int main()
 {
 	// Task 1
 	Power ultimate;
-	ultimate.setThing();
-	float a = ultimate.calculateThing();
+	ultimate.set();
+	float a = ultimate.calculate();
 	cout << a << endl;
 
 	// Task 2
@@ -152,5 +152,6 @@ int main()
 	stack.pop();
 	stack.print();
 
+	system("pause");
 	return 0;
 }
