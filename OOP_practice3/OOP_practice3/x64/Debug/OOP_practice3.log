@@ -1,5 +1,5 @@
 ﻿  OOP_practice3.cpp
-E:\Code\GitHub\study\OOP_practice3\OOP_practice3\OOP_practice3.cpp(22,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-E:\Code\GitHub\study\OOP_practice3\OOP_practice3\OOP_practice3.cpp(31,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-E:\Code\GitHub\study\OOP_practice3\OOP_practice3\OOP_practice3.cpp(39,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+E:\Code\GitHub\study\OOP_practice3\OOP_practice3\OOP_practice3.cpp(23,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+E:\Code\GitHub\study\OOP_practice3\OOP_practice3\OOP_practice3.cpp(32,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+E:\Code\GitHub\study\OOP_practice3\OOP_practice3\OOP_practice3.cpp(40,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   OOP_practice3.vcxproj -> E:\Code\GitHub\study\OOP_practice3\x64\Debug\OOP_practice3.exe
