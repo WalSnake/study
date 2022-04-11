@@ -1,9 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< Updated upstream
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_practice2", "OOP_practice2.vcxproj", "{512CCC78-CCB5-465F-AFA0-DAB62FE6B0A3}"
+=======
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_practice2", "OOP_practice2\OOP_practice2.vcxproj", "{F34EE958-9715-4144-8ED3-A4924C4422A6}"
+>>>>>>> Stashed changes
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +20,7 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< Updated upstream
 		{512CCC78-CCB5-465F-AFA0-DAB62FE6B0A3}.Debug|x64.ActiveCfg = Debug|x64
 		{512CCC78-CCB5-465F-AFA0-DAB62FE6B0A3}.Debug|x64.Build.0 = Debug|x64
 		{512CCC78-CCB5-465F-AFA0-DAB62FE6B0A3}.Debug|x86.ActiveCfg = Debug|Win32
@@ -21,11 +29,25 @@ Global
 		{512CCC78-CCB5-465F-AFA0-DAB62FE6B0A3}.Release|x64.Build.0 = Release|x64
 		{512CCC78-CCB5-465F-AFA0-DAB62FE6B0A3}.Release|x86.ActiveCfg = Release|Win32
 		{512CCC78-CCB5-465F-AFA0-DAB62FE6B0A3}.Release|x86.Build.0 = Release|Win32
+=======
+		{F34EE958-9715-4144-8ED3-A4924C4422A6}.Debug|x64.ActiveCfg = Debug|x64
+		{F34EE958-9715-4144-8ED3-A4924C4422A6}.Debug|x64.Build.0 = Debug|x64
+		{F34EE958-9715-4144-8ED3-A4924C4422A6}.Debug|x86.ActiveCfg = Debug|Win32
+		{F34EE958-9715-4144-8ED3-A4924C4422A6}.Debug|x86.Build.0 = Debug|Win32
+		{F34EE958-9715-4144-8ED3-A4924C4422A6}.Release|x64.ActiveCfg = Release|x64
+		{F34EE958-9715-4144-8ED3-A4924C4422A6}.Release|x64.Build.0 = Release|x64
+		{F34EE958-9715-4144-8ED3-A4924C4422A6}.Release|x86.ActiveCfg = Release|Win32
+		{F34EE958-9715-4144-8ED3-A4924C4422A6}.Release|x86.Build.0 = Release|Win32
+>>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+<<<<<<< Updated upstream
 		SolutionGuid = {A08ACD80-9044-49E8-BAAD-BCF9EB9AE21E}
+=======
+		SolutionGuid = {ABE0BF6F-F6BD-4B9D-8D75-AE955AFA971B}
+>>>>>>> Stashed changes
 	EndGlobalSection
 EndGlobal
